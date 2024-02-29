@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>DDU4 ErSolved.js</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+
+  <script src="https://unpkg.com/mqtt/dist/mqtt.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.3.0/p5.min.js" integrity="sha512-tGZFF1kxT/c9C+kv77mKkZ9Ww1VyU8TMX6HLUSzbPrDLuptbiRFBfti8A33ip+BBIHYUsybuZD9OKLmIqdLmaQ==" crossorigin="anonymous"></script>
+  <script src=”https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.11/addons/p5.dom.min.js”></script>
+  
+
+  <script src="sketch.js"></script>
+  </head>
+
+  <body id="all">
+    <main>
+      <div>
+        <h1>Mission Meltdown</h1>
+        <!--<h2 id="timer">Click on the button the start the escape box</h2> -->
+        <button id="timer">Press to start</button>
+        <div id="morse" class="hint"><p>Ikke løst</p></div>
+        <div id="temperatur" class="hint"><p>Ikke løst</p></div>
+        <div id="rgbkode" class="hint"><p>Ikke løst</p></div>
+        <div id="sorthvid" class="hint"><p>Ikke løst</p></div>
+        <div id="controllers"></div>
+        <div id="chart"><canvas id="chartCanvas"></canvas></div>
+      </div>
+      <div id="connection"></div>
+    </main>
+    
+  </body>
+</html>

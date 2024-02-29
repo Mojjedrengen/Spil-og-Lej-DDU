@@ -1,0 +1,94 @@
+:root {
+  --one: #024554;
+  --two: #53736A;
+  --three: #6A8C69;
+  --four: #A8B545;
+  --five: #C2C0A6;
+}
+
+@font-face {
+  font-family: Bungee-regular;
+  src: url('/fonts/bungee.regular.ttf');
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-image: url('Artboard1.svg');
+}
+
+canvas {
+  display: block;
+}
+
+*{
+  box-sizing: border-box;
+  /*font-family: Raleway;*/
+  font-family: 'Bungee-regular'; 
+}
+
+main{
+  width:100vw;
+  height:100vh;
+  display:grid;
+  place-items:center;
+  overflow:hidden;
+}
+
+h1 {
+  color: var(--five);
+  text-transform: uppercase;
+  font-size: 5rem;
+  font-weight: 100;
+  margin-top:0;
+  margin-bottom: -0.6rem;
+  text-align: center;
+} 
+
+h2 {
+  text-align: center;
+  color: var(--five);
+  font-size: 2rem;
+}
+
+button {
+  display: block;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  border: 3px var(--four);
+  font-size: 2rem;
+  padding: 10px;
+  color: var(--five);
+  background-color: var(--three);
+}
+
+.hint {
+  font-family: 'Bungee-regular'; 
+  margin-top: 0.5rem;
+  text-align: center;
+  color: var(--five);
+  font-size: 1.5rem;
+}
+
+#all {
+  background-color: var(--one);
+}
+
+#connection{
+  font-family: 'Raleway';
+  position:absolute;
+  bottom:2rem;
+  left:2rem;
+  color: var(--five);
+}
+
+#defaultCanvas0{
+  position:0, 0;
+}
+
+#chart{
+  top:0;
+  left:0;
+}
